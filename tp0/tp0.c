@@ -1,7 +1,4 @@
-// NOM : DJEFFAL Khaled Faiz
-// MATRICULE : 222231353316
-// GROUPE : 03 - SII
-
+// TP0 : DJEFFAL Khaled
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -30,9 +27,9 @@ int main() {
 
     char text[100]; 
 
-    // On prendre 1000000 element pour minimiser l'attend, et on lire le fichier 
+    // On prendre 10000000 element pour minimiser l'attend, et on lire le fichier 
     // et mettre chaque valeur dans le tableau fileElements
-    int maxLines = 1000000;
+    int maxLines = 10000000;
     int readLines = 0;  
     char **fileElements = malloc(maxLines * sizeof(char*));
     for (int i = 0; i < maxLines; i++) {
@@ -42,12 +39,9 @@ int main() {
     while(fgets(text, 100, file) && readLines < maxLines) {
         text[strcspn(text, "\n")] = 0; 
         strcpy(fileElements[readLines], text);
-        // printf("%s", text);
+        printf("\riteration %d jusqu'a %d", readLines + 1, maxLines);
+        fflush(stdout);    
         readLines++;
-    }
-
-    for (int i = 0; i < readLines; i++) {
-       printf("%s\n", fileElements[i]);
     }
     printf("\n \n \n");
 
@@ -201,62 +195,6 @@ int main() {
         }
         fclose(test2File);
         printf("Fichier qui contient 100 nombre aletoires primaire organiser en fonction des chiffres est cree avec le nom Test-2.txt\n\n");
-    }
-
-
-
-    // ---------------- QUESTION 5 --------------------
-    // chaque digit est 3 6 9 12
-
-    char **test3 = malloc(100 * sizeof(char*));
-    for (int i = 0; i < 100; i++) {
-        test3[i] = malloc(100 * sizeof(char));
-    }
-
-    count = 0;
-    int chiffresCorrectes[] = {3, 6, 9, 12};
-
-    for (int i = 0; i < 4; i++) {
-        int chiffres = chiffresCorrectes[i];
-        int min = 1;
-        for (int j = 1; j < chiffres; j++) min *= 10;
-        int max = min * 10 - 1;
-        int *validIndices = malloc(readLines * sizeof(int));
-        int validCount = 0;
-        for (int k = 0; k < readLines; k++) {
-            int value = atoi(fileElements[k]);
-            if (value >= min && value <= max) {
-                validIndices[validCount] = k;
-                validCount++;
-            }
-        }
-
-        int selection = validCount < 10 ? validCount : 10;
-
-        for (int s = 0; s < selection; s++) {
-            int randIndex = choisirRandom(validCount - 1);
-            strcpy(test3[count], fileElements[validIndices[randIndex]]);
-            validIndices[randIndex] = validIndices[validCount - 1];
-            validCount--;
-            count++;
-        }
-        free(validIndices);
-    }
-
-    printf("ELEMENTS DE TEST-3 : ---------\n");
-    for (int i = 0; i < 40; i++) {
-        printf("%s\n", test3[i]);
-    }
-
-    FILE *test3File = fopen("Test-3.txt", "w");
-    if (!test3File) {
-        printf("Problème de création de fichier\n");
-    } else {
-        for (int i = 0; i < 40; i++) {
-            fprintf(test3File, "%s\n", test3[i]);
-        }
-        fclose(test3File);
-        printf("Fichier qui contient 100 nombre aletoires primaire organiser en fonction des chiffres {3, 6, 9, 12} est cree avec le nom Test-3.txt\n");
     }
 
 
