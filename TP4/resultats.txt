@@ -1,0 +1,80 @@
+Tableau de taille 50
+Tri Bulle: 0.000000 s
+Tri Bulle Opt: 0.000000 s
+Tri par Tas: 0.000000 s
+Tri rapide: 0.000000 s
+Tri par Distribution: 0.000000 s
+Tri Gnome: 0.000000 s
+
+Tableau de taille 100
+Tri Bulle: 0.000000 s
+Tri Bulle Opt: 0.000000 s
+Tri par Tas: 0.000000 s
+Tri rapide: 0.000000 s
+Tri par Distribution: 0.000000 s
+Tri Gnome: 0.000000 s
+
+Tableau de taille 200
+Tri Bulle: 0.000200 s
+Tri Bulle Opt: 0.000200 s
+Tri par Tas: 0.000000 s
+Tri rapide: 0.000000 s
+Tri par Distribution: 0.000200 s
+Tri Gnome: 0.000000 s
+
+Tableau de taille 500
+Tri Bulle: 0.001000 s
+Tri Bulle Opt: 0.001200 s
+Tri par Tas: 0.000000 s
+Tri rapide: 0.000000 s
+Tri par Distribution: 0.000200 s
+Tri Gnome: 0.000800 s
+
+Tableau de taille 1000
+Tri Bulle: 0.004200 s
+Tri Bulle Opt: 0.004600 s
+Tri par Tas: 0.000200 s
+Tri rapide: 0.000200 s
+Tri par Distribution: 0.000200 s
+Tri Gnome: 0.003000 s
+
+Tableau de taille 1500
+Tri Bulle: 0.010000 s
+Tri Bulle Opt: 0.009800 s
+Tri par Tas: 0.000200 s
+Tri rapide: 0.000400 s
+Tri par Distribution: 0.000200 s
+Tri Gnome: 0.006800 s
+
+Tableau de taille 2000
+Tri Bulle: 0.021000 s
+Tri Bulle Opt: 0.018000 s
+Tri par Tas: 0.000400 s
+Tri rapide: 0.000200 s
+Tri par Distribution: 0.000400 s
+Tri Gnome: 0.012000 s
+
+Tableau de taille 5000
+Tri Bulle: 0.113200 s
+Tri Bulle Opt: 0.111400 s
+Tri par Tas: 0.001200 s
+Tri rapide: 0.001000 s
+Tri par Distribution: 0.001000 s
+Tri Gnome: 0.072000 s
+
+Tableau de taille 10000
+Tri Bulle: 0.474000 s
+Tri Bulle Opt: 0.465600 s
+Tri par Tas: 0.003000 s
+Tri rapide: 0.001800 s
+Tri par Distribution: 0.002000 s
+Tri Gnome: 0.291200 s
+
+Tableau de taille 20000
+Tri Bulle: 2.172800 s
+Tri Bulle Opt: 2.116600 s
+Tri par Tas: 0.006400 s
+Tri rapide: 0.003800 s
+Tri par Distribution: 0.004200 s
+Tri Gnome: 1.177400 s
+
